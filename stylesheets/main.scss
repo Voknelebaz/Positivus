@@ -1,0 +1,28 @@
+@import "./base/_base";
+@import "../assets/fonts/fonts";
+@import "./blocks/blockBase";
+
+body {
+	font-family: "Space Grotesk", sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.page {
+	flex: 1 1 auto;
+}
+.button {
+	cursor: pointer;
+	padding: 1.25rem 2.19rem;
+	border-radius: 0.875rem;
+}
+
+[class*="__container"] {
+	max-width: 1210px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
