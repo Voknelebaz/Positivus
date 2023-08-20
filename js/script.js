@@ -1,5 +1,7 @@
 "use strict"
 
+
+
 document.addEventListener("click", documentActions);
 
 function documentActions(e) {

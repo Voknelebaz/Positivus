@@ -32,7 +32,8 @@
     }
     @media (max-width: 60rem) {
         &__content {
-            text-align: center;align-items: center;
+            text-align: center;
+            align-items: center;
         }
     }
     // .proposal__title
@@ -73,6 +74,12 @@
         }
     }
 }
+@media (max-width: 60rem) {
+    .proposal {
+        padding-bottom: 2.75rem;
+    }
+}
+
 .main {
     // .main__button
     &__button {
