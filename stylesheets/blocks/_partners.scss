@@ -1,0 +1,25 @@
+.partners {
+    padding-bottom: 8.75rem;
+    // .partners__container
+    margin: 0 auto;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    @media (max-width: 52.5rem) {
+        &__container {
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 40.125rem) {
+    .partners {
+        padding-bottom: 2.74rem;
+    }
+}
+.partner-logo {
+}
