@@ -84,13 +84,14 @@
     }
     // .card__title
     &__title {
-        width: 13.8125rem;
+        max-width: 13.8125rem;
         color: $primary-font-color;
         font-family: Space Grotesk;
         font-size: 1.875rem;
         font-weight: 500;
         max-width: 100%;
     }
+
     // .card__text
     &__text {
         display: flex;
@@ -115,7 +116,7 @@
     &__image {
         max-width: 100%;
     }
-    @media (max-width:40.125rem) {
+    @media (max-width: 40.125rem) {
         &__image {
             display: none;
         }

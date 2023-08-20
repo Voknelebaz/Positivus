@@ -582,7 +582,7 @@ template {
   }
 }
 .card__title {
-  width: 13.8125rem;
+  max-width: 13.8125rem;
   color: #000;
   font-family: Space Grotesk;
   font-size: 1.875rem;
@@ -648,6 +648,82 @@ template {
 
 .card--black {
   background: #191a23;
+}
+
+.proposal {
+  padding-bottom: 8.75rem;
+}
+.proposal__body {
+  position: relative;
+  padding: 0 3.75rem;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  row-gap: 11.625rem;
+  background-color: #F3F3F3;
+  justify-content: space-between;
+  height: 21.6875rem;
+}
+@media (max-width: 60rem) {
+  .proposal__body {
+    padding: 2.75rem 2.75rem;
+    height: auto;
+    justify-content: center;
+  }
+}
+.proposal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.625rem;
+}
+@media (max-width: 60rem) {
+  .proposal__content {
+    text-align: center;
+    align-items: center;
+  }
+}
+.proposal__title {
+  color: #000;
+  font-family: Space Grotesk;
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+.proposal__text {
+  max-width: 31.25rem;
+  color: #000;
+  font-family: Space Grotesk;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+@media (max-width: 60rem) {
+  .proposal__text p {
+    max-width: 100%;
+  }
+}
+.proposal__image img {
+  position: absolute;
+  left: 62%;
+  bottom: -6%;
+}
+@media (max-width: 68rem) {
+  .proposal__image img {
+    left: 57%;
+  }
+}
+@media (max-width: 60rem) {
+  .proposal__image img {
+    display: none;
+  }
+}
+
+@media (max-width: 60rem) {
+  .main__button {
+    max-width: 100%;
+  }
+  .main__button button {
+    max-width: 100%;
+  }
 }
 
 body {
