@@ -908,6 +908,11 @@ template {
   gap: 1.875rem;
 }
 
+@media (max-width: 58.125rem) {
+  .process {
+    padding-bottom: 3rem;
+  }
+}
 .block__body {
   display: flex;
   width: 90%;
@@ -961,6 +966,16 @@ template {
     font-size: 1.125rem;
   }
 }
+@media (max-width: 58.125rem) {
+  .block__text {
+    max-width: 12.6875rem;
+  }
+}
+@media (max-width: 22.25rem) {
+  .block__text {
+    max-width: 8.6875rem;
+  }
+}
 @media (max-width: 68.75rem) {
   .block__icon span {
     width: 30px;
@@ -978,6 +993,12 @@ template {
   background-repeat: no-repeat;
   cursor: pointer;
 }
+@media (max-width: 58.125rem) {
+  .block .accordion-button {
+    width: 30px;
+    height: 30px;
+  }
+}
 .block .accordion-button-after {
   border-radius: 100%;
   border: 1px solid #191A23;
@@ -989,6 +1010,12 @@ template {
   background-repeat: no-repeat;
   cursor: pointer;
 }
+@media (max-width: 58.125rem) {
+  .block .accordion-button-after {
+    width: 30px;
+    height: 30px;
+  }
+}
 .block .panel {
   padding: 0 18px;
   max-height: 0;
@@ -998,6 +1025,155 @@ template {
 }
 .block .green {
   background: #b9ff66;
+}
+
+.team__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (max-width: 77.5rem) {
+  .team__body {
+    align-items: center;
+  }
+}
+.team__headings {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding-bottom: 5rem;
+}
+@media (max-width: 77.5rem) {
+  .team__headings {
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 58.125rem) {
+  .team__headings {
+    flex-direction: column;
+    padding-bottom: 2rem;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}
+.team__title {
+  background-color: #b9ff66;
+  color: #000;
+  font-family: Space Grotesk;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+@media (max-width: 58.125rem) {
+  .team__title {
+    font-size: 2.25rem;
+  }
+}
+.team__text {
+  color: #000;
+  max-width: 29.5625rem;
+  font-family: Space Grotesk;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.team__cards {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.75rem;
+}
+@media (max-width: 77.5rem) {
+  .team__cards {
+    justify-content: center;
+  }
+}
+@media (max-width: 51.4375rem) {
+  .team__cards {
+    margin-bottom: 1.75rem;
+  }
+}
+.team__card {
+  padding: 2rem 1.8rem;
+  border-radius: 2.8125rem;
+  border: 0.0625rem solid #191A23;
+  background: #F3F3F3;
+  box-shadow: 0rem 0.3125rem 0rem 0rem #191a23;
+}
+.button {
+  border-radius: 0.875rem;
+  background: #000;
+  width: 16.8125rem;
+  padding: 1.25rem 2.1875rem;
+  color: #fff;
+  text-align: center;
+  font-family: Space Grotesk;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-left: auto;
+}
+
+.button:hover {
+  background: #191A23;
+}
+
+.card__worker-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.worker__top {
+  display: flex;
+  align-items: end;
+  position: relative;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1.75rem;
+}
+.worker__image {
+  margin-right: 1.25rem;
+  width: 6.0625rem;
+  height: 6.0625rem;
+}
+.worker__name {
+  color: #000;
+  font-family: Space Grotesk;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.worker__position {
+  color: #000;
+  font-family: Space Grotesk;
+  font-size: 1.125rem;
+  font-weight: 400;
+  max-width: 12.125rem;
+}
+@media (max-width: 39rem) {
+  .worker__position {
+    font-size: 1rem;
+  }
+}
+.worker__linkedin {
+  width: 2.125rem;
+  height: 2.125rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.worker__bottom {
+  padding-top: 1.75rem;
+}
+.worker__text {
+  max-width: 19.8125rem;
+  color: #000;
+  font-family: Space Grotesk;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+@media (max-width: 39rem) {
+  .worker__text {
+    font-size: 1rem;
+  }
 }
 
 body {

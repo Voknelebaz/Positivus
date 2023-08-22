@@ -1,0 +1,181 @@
+.team {
+    // .team__container
+    &__container {
+    }
+    // .team__body
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    @media (max-width: 77.5rem) {
+        &__body {
+            align-items: center;
+        }
+    }
+    // .team__headings
+    &__headings {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        padding-bottom: 5rem;
+    }
+    @media (max-width: 77.5rem) {
+        &__headings{
+            justify-content: center;
+            padding-bottom: 2rem;
+        }
+    }
+    // .team__title
+    @media (max-width: 58.125rem) {
+        &__headings {
+            flex-direction: column;
+            padding-bottom: 2rem;
+            text-align: center;
+            gap: 1.5rem;
+        }
+    }
+    &__title {
+        background-color: $primary-additional-color;
+        color: $primary-font-color;
+        font-family: Space Grotesk;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    @media (max-width: 58.125rem) {
+        &__title {
+            font-size: 2.25rem;
+        }
+    } 
+   
+    
+    // .process__text
+    &__text {
+        color: $primary-font-color;
+        max-width: 29.5625rem;
+        font-family: Space Grotesk;
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+    // .team__cards
+    &__cards {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 3.75rem;
+    }
+
+    @media (max-width: 77.5rem) {
+        &__cards {
+            justify-content: center;
+        }
+    }
+    
+    @media (max-width: 51.4375rem) {
+        &__cards {
+            margin-bottom: 1.75rem;
+        }
+    }
+    // .team__card
+    &__card {
+        
+        padding: 2rem 1.8rem;
+        border-radius: 2.8125rem;
+        border: 0.0625rem solid $border-color-card;
+        background: $bg-color-card;
+        box-shadow: 0rem 0.3125rem 0rem 0rem $shadow-color;
+    }
+
+    &__button {
+    }
+}
+.button {
+    border-radius: 0.875rem;
+    background: $primary-font-color;
+    width: 16.8125rem;
+    padding: 1.25rem 2.1875rem;
+    color: $secondary-font-color;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-left: auto;
+}
+.button:hover {
+    background: $bg-cases-color;
+}
+.card {
+    // .card__worker-info
+    &__worker-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.worker {
+    // .worker__top
+    &__top {
+        display: flex;
+        align-items: end;
+        position: relative;
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 1.75rem;
+    }
+    // .worker__image
+    &__image {
+        margin-right: 1.25rem;
+        width: 6.0625rem;
+        height: 6.0625rem;
+    }
+    // .worker__cred
+    &__cred {
+    }
+    // .worker__name
+    &__name {
+        color: $primary-font-color;
+        font-family: Space Grotesk;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    
+    // .worker__position
+    &__position {
+        color: $primary-font-color;
+        font-family: Space Grotesk;
+        font-size: 1.125rem;
+        font-weight: 400;
+        max-width: 12.125rem;
+    }
+    @media (max-width: 39rem) {
+        &__position {
+            font-size: 1rem;
+        }
+    }
+    // .worker__linkedin
+    &__linkedin {
+        width: 2.125rem;
+        height: 2.125rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+    // .worker__bottom
+    &__bottom {
+        padding-top: 1.75rem;
+    }
+    // .worker__text
+    &__text {
+        max-width: 19.8125rem;
+        color: $primary-font-color;
+        font-family: Space Grotesk;
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+    @media (max-width: 39rem) {
+        &__text {
+            font-size: 1rem;
+        }
+    }
+}
