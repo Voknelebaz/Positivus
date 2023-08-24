@@ -678,31 +678,36 @@
                      </div>
                   </div>
                   <div class="contact__form form">
-                     <form action="#">
-                        <div class="form__radio">
-                           <input type="radio" id="sayHi" name="radio" value="SayHi">
-                           <label for="SayHi">Say Hi</label> <input type="radio" id="quote" name="radio"
-                              value="GetaQuote">
-                           <label for="GetaQuote   ">Get a Quote</label>
-                        </div>
+                     <form id="form" class="form__body" action="#">
+                        <div class="form__item">
 
-                        <div class="form__name">
-                           <label for="name">Name</label><br>
-                           <input type="text" value="" placeholder="Name">
+                           <input id="formRadioHi" type="radio" class="form__radio" name="radio">
+                           <label for="formRadioHi" class="form__label" value="Say Hi" name="answer">Say Hi</label>
+                           <input id="formRadioQuote" type="radio" class="form__radio" name="radio">
+                           <label for="formRadioQuote" class="form__label" value="Get a Quote" name="answer">Get a
+                              Quote</label>
+
                         </div>
-                        <div class="form__email">
-                           <label for="email">Email*</label><br>
-                           <input type="email" value="" placeholder="Email">
+                        <div class="form__item">
+                           <label for="name" class="form__label" value="Name" name="name">Name</label>
+                           <input id="name" type="text" class="form__input" placeholder="Name">
                         </div>
-                        <div class="form__area">
-                           <label for="area">Message*</label><br>
-                           <input type="area" value="" placeholder="Message">
+                        <div class="form__item">
+                           <label for="email" class="form__label" value="Email" name="email">Email*</label>
+                           <input id="email" type="email" class="form__input" placeholder="Email">
+                        </div>
+                        <div class="form__item">
+                           <label for="message" class="form__label" value="Message" name="maessage">Message*</label>
+                           <textarea class="form__message" name="message" id="message" cols="30" rows="10"
+                              placeholder="Message"></textarea>
                         </div>
                         <div class="form__button">
-                           <button class="button">Send Message</button>
+                           <button class="button-form">Send Message</button>
                         </div>
                      </form>
-                     
+                     <div class="form__image">
+                        <img src="assets/images/section-form/01.png" alt="image">
+                     </div>
                   </div>
                </div>
             </div>
@@ -710,7 +715,75 @@
 
       </main>
       <footer class="footer">
-         footer
+         <div class="footer__container">
+            <div class="footer__wrapper">
+               <div class="footer__header">
+                  <div class="footer__logo">
+                     <a href="#"><img src="assets/images/footer/logo.svg" alt="Footer Logo"></a>
+                  </div>
+                  <nav class="footer__menu menu">
+                     <ul class="menu__list">
+                        <li class="menu__item">
+                           <a href="" class="menu__link">About us</a>
+                        </li>
+                        <li class="menu__item">
+                           <a href="" class="menu__link">Services</a>
+                        </li>
+                        <li class="menu__item">
+                           <a href="" class="menu__link">Use Cases</a>
+                        </li>
+                        <li class="menu__item">
+                           <a href="" class="menu__link">Pricing</a>
+                        </li>
+                        <li class="menu__item">
+                           <a href="" class="menu__link">Blog</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <div class="footer__icons icon">
+                     <div class="icon-item">
+                        <a href="#"><img src="assets/images/footer/linkedin.svg" alt="linkedin"></a>
+                     </div>
+                     <div class="icon-item">
+                        <a href="#"></a><img src="assets/images/footer/facebook.svg" alt="facebook"></a>
+                     </div>
+                     <div class="icon-item">
+                        <a href="#"> <img src="assets/images/footer/twitter.svg" alt="twitter"></a>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="footer__body">
+                  <div class="footer__contact">
+                     <h4 class="footer__contact-title">Contact us</h4>
+                     <div class="footer__text">
+                        <p>Email: info@positivus.com</p>
+                     </div>
+                     <div class="footer__text">
+                        <p>Phone: 555-567-8901</p>
+                     </div>
+                     <div class="footer__text">
+                        <p>Address: 1234 Main St<br>
+                           Moonstone City, Stardust State 12345</p>
+                     </div>
+                  </div>
+                  <div class="footer__form">
+                     <input type="email" class="footer__input" placeholder="Email">
+                     <div class="footer__button">
+                        <button>Subscribe to news</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer__bottom">
+                  <div class="footer__copyrights">
+                     <p class="footer__copyrights-text">© 2023 Positivus. All Rights Reserved.</p>
+                  </div>
+                  <div class="footer__policy">
+                     <p class="footer__copyrights-text"><a href="#">Privacy Policy</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
       </footer>
 
    </div>
