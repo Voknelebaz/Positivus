@@ -341,14 +341,14 @@ template {
     row-gap: 1rem;
   }
 }
-.menu__link {
+.menu__link-header {
   color: #000;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.75rem;
   text-decoration: none;
 }
-.menu__link:hover {
+.menu__link-header:hover {
   color: #2c2a2a;
   -webkit-text-decoration: underline 2px;
           text-decoration: underline 2px;
@@ -365,7 +365,7 @@ template {
     flex-direction: column;
     gap: 2.1875rem;
   }
-  .menu__link {
+  .menu__link-header {
     font-size: 1.8rem;
   }
 }
